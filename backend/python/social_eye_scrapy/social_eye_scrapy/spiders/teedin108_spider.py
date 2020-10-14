@@ -1,12 +1,12 @@
 import scrapy
-
+from scrapy import Selector
 
 class QuotesSpider(scrapy.Spider):
     name = "teedin108"
 
     def start_requests(self):
         urls = [
-            'https://www.teedin108.com/house/amphur/42/'
+            'https://www.teedin108.com/house/amphur/43/'
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
@@ -26,22 +26,30 @@ class QuotesSpider(scrapy.Spider):
                             for colxs12 in row_b.css('div.col-xs-12'):
                                 for row_c in colxs12.css('div.row'):
                                     yield{
-                                      'colxs12a': row_c.css('div.col-xs-12 a::text').getall()
+                                      'name': row_c.css('div.col-xs-12 a::text').get(),
+                                      'price': row_c.css('div.priceinlist::text')[1].get(),
+                                      'link': row_c.css('div.col-xs-12 a::attr(href)').get()
                                     }
-            # yield {
-            #     'row_a': container.css('div.row'),
-            #     'colsm9': row_a.css('div.col-sm-9'),
-            #     'row_b': colsm9.css('div.row'),
-            #     'colxs12': row_b.css('div.col-xs-12'),
-            #     'row_c': colxs12.css('div.row'),
-            #     'colxs12a' : row_c.css('div.col-xs-12 a::text').getall()
-            # }
+                                    next_page = row_c.css('div.col-xs-12 a::attr(href)').get()
+                                    print("following " + next_page)
+                                    if next_page is not None:
+                                        yield response.follow(next_page, callback=self.parseinside)
 
-# container = response.css('div.container')
-# row1 = container.css('div.row')
-# colsm9 = row1.css('div.col-sm-9')
-# row2 = colsm9.css('div.row')
-# colxs12 = row2.css('div.col-xs-12')
-# row3 = colxs12.css('div.row')
-# colxs12a = row3.css('div.col-xs-12 a::text')[1].get()
-# print(dict(text=colxs12a))
+        
+        
+    def parseinside(self, response):
+        for info in response.css('div.working-area div.row div.padding-right-10 div.row article'):
+            yield {
+                'info': info.css('div.poster-detail::text').getall()
+            }
+
+    # container = response.css('div.container')
+    # row1 = container.css('div.row')
+    # colsm9 = row1.css('div.col-sm-9')
+    # row2 = colsm9.css('div.row')
+    # colxs12 = row2.css('div.col-xs-12')
+    # row3 = colxs12.css('div.row')
+    # name = row3.css('div.col-xs-12 a::text').get()
+    # price = row3.css('div.priceinlist::text').get()
+    # link =  row3.css('div.col-xs-12 a::attr(href)').get()
+    # print(dict(name=name, price = price,link = link))
