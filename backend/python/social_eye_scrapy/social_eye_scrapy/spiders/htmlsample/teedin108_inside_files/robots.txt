@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+User-agent: trovitBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: Bing
+Disallow: /
+
+User-agent: BingPreview
+Disallow: /
