@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
 import "../App.css";
 // import { stockData } from "../mockupjson";
 import data from '../teedin108.json'
+import { database } from "../config/firebase";
 
 import {
   Button,
@@ -27,14 +29,35 @@ import {
 } from "react-router-dom";
 import "fontsource-roboto";
 
+// useEffect(
+//   database.ref('/').on("value", snapshot => {
+//     const mockupData = snapshot
+// },[])
+
 const useStyles = makeStyles({
   table: {
     Width: 300,
   },
 });
 
+var mockxxx 
 
 export const LandResultTable = () => {
+  const [mockupdata, setData] = useState();
+
+  useEffect(() => {
+    database
+      .ref("/")
+      .once("value")
+      .then(function (snapshot) {
+        mockxxx = snapshot.val()
+        
+        // setData(snapshot.val());
+      });
+  });
+  console.log(mockxxx)
+  // console.log("Mockup ", mockupdata);
+
   const classes = useStyles();
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
@@ -47,6 +70,8 @@ export const LandResultTable = () => {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
+  // const stringJSON = JSON.stringify(database)
+  // console.log("database ", database)
   return (
     <>
       <HomePageHeader />
@@ -76,8 +101,8 @@ export const LandResultTable = () => {
             <TableHead>
               <TableRow>
                 <TableCell>Name</TableCell>
-                <TableCell align="center">Price</TableCell>
-                <TableCell align="center">Link</TableCell>
+                <TableCell>Price</TableCell>
+                <TableCell>Link</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -122,7 +147,7 @@ const HomePageHeader = () => {
       {/* <Typography variant="h2" className="header">
         The Social Eye
       </Typography> */}
-      <Typography variant="h4" className="header" style={{padding: 10}}>
+      <Typography variant="h4" className="header" style={{ padding: 10 }}>
         Result for "Saimai"
       </Typography>
     </header>
@@ -140,7 +165,7 @@ const Stock = ({
   comparison,
   link,
 }) => {
-    // if (!name) return null;
+  // if (!name) return null;
   return (
     <TableRow>
       <TableCell>{name}</TableCell>

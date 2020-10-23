@@ -9,21 +9,13 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import "./config/firebase";
 import AppHeader from './components/AppHeader';
 import { LandResultTable } from "./pages/result";
 import "./App.css";
 import "./pages/search.js"
 import { Search } from "./pages/search.js";
 
-// Firebase App (the core Firebase SDK) is always required and must be listed first
-import * as firebase from "firebase/app";
-
-// If you enabled Analytics in your project, add the Firebase SDK for Analytics
-import "firebase/analytics";
-
-// Add the Firebase products that you want to use
-import "firebase/auth";
-import "firebase/firestore";
 
 const styles = theme => ({
   main: {
@@ -58,24 +50,6 @@ const App = ({ classes }) => (
 
 export default withStyles(styles)(App);
 
-// // export default function App() {
-//   return (
-//     <Router>
-//       <div>
-
-//         <Switch>
-//           <Route path="/result">
-//             <Result />
-//           </Route>
-//           <Route path="/">
-//             <Home />
-//           </Route>
-//         </Switch>
-//       </div>
-//     </Router>
-//   );
-// }
-
 function Home() {
   return <div className="App">
     < Search />
@@ -89,18 +63,3 @@ function Result() {
     </div>
   );
 }
-
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyDlsOJK_IyiZEhP3vAIfR0VQK3N4she84U",
-  authDomain: "socialeye-seniorproject.firebaseapp.com",
-  databaseURL: "https://socialeye-seniorproject.firebaseio.com",
-  projectId: "socialeye-seniorproject",
-  storageBucket: "socialeye-seniorproject.appspot.com",
-  messagingSenderId: "209273349716",
-  appId: "1:209273349716:web:06abba1d7cb9e2a67f6fc1",
-  measurementId: "G-T04J1XK538"
-};
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
