@@ -34,23 +34,23 @@ class QuotesSpider(scrapy.Spider):
                 'email': info.css('div.poster-detail a::text').getall()[1]
             }
 
-    # def parse(self, response):
-    #     for container in response.css('div.container'):
-    #         for row_a in container.css('div.row'):
-    #             for colsm9 in row_a.css('div.col-sm-9'):
-    #                 for row_b in colsm9.css('div.row'):
-    #                     for colxs12 in row_b.css('div.col-xs-12'):
-    #                         for row_c in colxs12.css('div.row'):
-    #                             yield {
-    #                                 'name': row_c.css('div.col-xs-12 a::text').get(),
-    #                                 'price': row_c.css('div.priceinlist::text')[1].get(),
-    #                                 'link': row_c.css('div.col-xs-12 a::attr(href)').get()
-    #                             }
-    #                             next_page = row_c.css(
-    #                                 'div.col-xs-12 a::attr(href)').get()
-    #                             print("following " + next_page)
-    #                             if next_page is not None:
-    #                                 yield response.follow(next_page, callback=self.parseinside)
+    def parse(self, response):
+        for container in response.css('div.container'):
+            for row_a in container.css('div.row'):
+                for colsm9 in row_a.css('div.col-sm-9'):
+                    for row_b in colsm9.css('div.row'):
+                        for colxs12 in row_b.css('div.col-xs-12'):
+                            for row_c in colxs12.css('div.row'):
+                                yield {
+                                    'name': row_c.css('div.col-xs-12 a::text').get(),
+                                    'price': row_c.css('div.priceinlist::text')[1].get(),
+                                    'link': row_c.css('div.col-xs-12 a::attr(href)').get()
+                                }
+                                next_page = row_c.css(
+                                    'div.col-xs-12 a::attr(href)').get()
+                                print("following " + next_page)
+                                if next_page is not None:
+                                    yield response.follow(next_page, callback=self.parseinside)
 
     # def parseinside(self, response):
     #     for info in response.css('div.working-area div.row div.padding-right-10 div.row article'):
