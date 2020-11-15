@@ -1,0 +1,8 @@
+.\backend\python\social-eye-env\Scripts\Activate
+
+cd .\backend\python\social_eye_scrapy\social_eye_scrapy
+
+scrapy crawl teedin108 -O .\result\teedin108_23.json -a tag=23
+scrapy crawl teedin108inside -O .\result\teedin108_23_inside.json
+
+scrapy crawl author -O author.json
