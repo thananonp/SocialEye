@@ -8,8 +8,8 @@ import {
 const AppHeader = () => (
   <AppBar position="static">
     <Toolbar>
-      <Typography variant="h6" color="inherit">
-        The social Eye
+      <Typography variant="h6" color="inherit" >
+        The Social Eye
       </Typography>
     </Toolbar>
   </AppBar>

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
+import _ from "lodash";
 
 import "../App.css";
 // import { stockData } from "../mockupjson";
-import data from '../teedin108.json'
+// import data from "../teedin108.json";
 import { database } from "../config/firebase";
 
 import {
@@ -18,6 +19,7 @@ import {
   TableRow,
   TablePagination,
   Paper,
+  Text
 } from "@material-ui/core";
 import {
   BrowserRouter as Router,
@@ -29,34 +31,42 @@ import {
 } from "react-router-dom";
 import "fontsource-roboto";
 
-// useEffect(
-//   database.ref('/').on("value", snapshot => {
-//     const mockupData = snapshot
-// },[])
-
 const useStyles = makeStyles({
   table: {
-    Width: 300,
+    minWidth: 300,
   },
 });
 
-var mockxxx 
+var mockxxx;
 
 export const LandResultTable = () => {
-  const [mockupdata, setData] = useState();
+  const [data, setData] = useState();
+  const [alreadyQuery, setAlreadyQuery] = useState(false);
 
   useEffect(() => {
-    database
-      .ref("/")
-      .once("value")
-      .then(function (snapshot) {
-        mockxxx = snapshot.val()
-        
-        // setData(snapshot.val());
-      });
+    const fetchData = async () => {
+      const result = await database
+        .ref('/mockupdata')
+        .once("value")
+        .then(function (snapshot) {
+          return snapshot.val();
+        });
+      setData(result);
+      setAlreadyQuery(true);
+    };
+    if (!alreadyQuery) {
+      fetchData();
+    }
+    if (data) {
+      console.log("Mockup ", data);
+    }
   });
-  console.log(mockxxx)
-  // console.log("Mockup ", mockupdata);
+  // console.log(mockxxx)
+ 
+  console.log("Data ", data);
+
+  
+
 
   const classes = useStyles();
   const [page, setPage] = React.useState(0);
@@ -70,6 +80,59 @@ export const LandResultTable = () => {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
+
+  const renderData = () => {
+    if (data) return (
+      <Paper elevation={3}>
+        <TableContainer>
+          <Table
+            stickyHeader
+            className={classes.table}
+            aria-label="simple table"
+            size="small"
+          >
+            <TableHead>
+              <TableRow>
+                <TableCell style={{ width: 800 }}>Name</TableCell>
+                <TableCell>Price</TableCell>
+                <TableCell>Link</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {data
+      .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+      .map((data, key) => {
+        return (
+          <Stock
+            key={key}
+            name={data.name}
+            price={data.price}
+            // size={data.size}
+            // persquaremeter={data.persquaremeter}
+            // location={data.location}
+            // district={data.district}
+            // province={data.province}
+            // comparison={data.comparisonwithaverage}
+            link={data.link}
+          />
+        );
+      })}
+            </TableBody>
+          </Table>
+        </TableContainer>
+        <TablePagination
+          rowsPerPageOptions={[10, 25, 100]}
+          component="div"
+          count={data.length}
+          rowsPerPage={rowsPerPage}
+          page={page}
+          onChangePage={handleChangePage}
+          onChangeRowsPerPage={handleChangeRowsPerPage}
+        />
+      </Paper>
+    )
+    return (<h1>กูโหลดอยู่ไอ่สัส!!!</h1>)
+  }
   // const stringJSON = JSON.stringify(database)
   // console.log("database ", database)
   return (
@@ -90,53 +153,7 @@ export const LandResultTable = () => {
           Download JSON
         </Button>
       </Link>
-      <Paper elevation={3}>
-        <TableContainer>
-          <Table
-            stickyHeader
-            className={classes.table}
-            aria-label="simple table"
-            size="small"
-          >
-            <TableHead>
-              <TableRow>
-                <TableCell>Name</TableCell>
-                <TableCell>Price</TableCell>
-                <TableCell>Link</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {data
-                .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-                .map((data, key) => {
-                  return (
-                    <Stock
-                      key={key}
-                      name={data.name}
-                      price={data.price}
-                      // size={data.size}
-                      // persquaremeter={data.persquaremeter}
-                      // location={data.location}
-                      // district={data.district}
-                      // province={data.province}
-                      // comparison={data.comparisonwithaverage}
-                      link={data.link}
-                    />
-                  );
-                })}
-            </TableBody>
-          </Table>
-        </TableContainer>
-        <TablePagination
-          rowsPerPageOptions={[10, 25, 100]}
-          component="div"
-          count={data.length}
-          rowsPerPage={rowsPerPage}
-          page={page}
-          onChangePage={handleChangePage}
-          onChangeRowsPerPage={handleChangeRowsPerPage}
-        />
-      </Paper>
+      {renderData()}
     </>
   );
 };
@@ -144,9 +161,6 @@ export const LandResultTable = () => {
 const HomePageHeader = () => {
   return (
     <header className="header">
-      {/* <Typography variant="h2" className="header">
-        The Social Eye
-      </Typography> */}
       <Typography variant="h4" className="header" style={{ padding: 10 }}>
         Result for "Saimai"
       </Typography>
