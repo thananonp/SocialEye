@@ -7,10 +7,13 @@ class QuotesSpider(scrapy.Spider):
     name = "teedin108"
 
     def start_requests(self):
-        url = 'https://www.teedin108.com/house/amphur/'
-        tag = getattr(self, 'tag', None)
-        if tag is not None:
-            url = url + tag
+        url = 'https://www.teedin108.com/'
+        province = getattr(self, 'province', None)
+        amphur = getattr(self, 'amphur', None)
+        if amphur is not None:
+            url = url + '/search/province/' + province
+        if province is not None:
+            url = url + '/house/amphur/' + province
         yield scrapy.Request(url=url, callback=self.parse)
 
     # def parse(self, response):

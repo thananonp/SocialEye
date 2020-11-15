@@ -27,13 +27,16 @@ class QuotesSpider(scrapy.Spider):
         # tag = getattr(self, 'tag', None)
         # if tag is not None:
         #     url = url + tag
-        for url in urls:
-            yield scrapy.Request(url=url, callback=self.parseinside)
 
-    def parseinside(self, response):
+        # urls = ["https://www.teedin108.com/house/view/2286869/"]
+        for url in urls:
+            yield scrapy.Request(url=url, callback=self.parseinside, cb_kwargs=dict(url=url))
+
+    def parseinside(self, response, url):
         # for info in response.css('div.working-area div.row div.padding-right-10 div.row article'):
         for info in response.css('div.working-area div.row div.padding-right-10 div.row article'):
             yield {
+                'url': url,
                 'info': re.sub('\s{2,}', '', "".join(info.css('div.description::text').getall())),
                 'name': re.sub('\s{2,}', '', info.css('div.poster-detail::text').getall()[1]),
                 'line': re.sub('\s{2,}', '', info.css('div.poster-detail::text').getall()[2]),
