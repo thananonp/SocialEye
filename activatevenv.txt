@@ -30,3 +30,4 @@ scrapy crawl quotes -O .\result\quotes.json
 
 python .\spiders\nlp.py
 python .\spiders\tesetttt.py
+python .\spiders\DDPropertyRSS.py
