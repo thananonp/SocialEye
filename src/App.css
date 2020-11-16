@@ -43,12 +43,12 @@
   margin-top: 3em;
 }
 
-.table, th, td {
+/* .table, th, td {
   width: 100%;
   border: 1px solid black;
   border-collapse: collapse;
   padding: 15px 15px;
-}
+} */
 
 .result{
   padding: 20px;
