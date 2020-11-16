@@ -1,12 +1,14 @@
 .\backend\python\social-eye-venv\Scripts\Activate
-
 cd .\backend\python\social_eye_scrapy\social_eye_scrapy
 
-scrapy crawl teedin108 -O .\result\teedin108_amphur_23.json -a amphur=23
+scrapy crawl teedin108 -O .\result\teedin108_amphur_5.json -a amphur=5
 scrapy crawl teedin108 -O .\result\teedin108_province_1.json -a province=1
+scrapy crawl teedin108 -O .\result\teedin108_province_2.json -a province=2
 scrapy crawl teedin108inside -O .\result\teedin108_23_inside.json
 
-scrapy crawl author -O author.json
+scrapy crawl author -O .\result\author.json
+scrapy crawl quotes -O .\result\quotes.json
+
 
 python .\spiders\nlp.py
 python .\spiders\tesetttt.py
