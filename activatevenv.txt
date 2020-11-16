@@ -4,7 +4,25 @@ cd .\backend\python\social_eye_scrapy\social_eye_scrapy
 scrapy crawl teedin108 -O .\result\teedin108_amphur_5.json -a amphur=5
 scrapy crawl teedin108 -O .\result\teedin108_province_1.json -a province=1
 scrapy crawl teedin108 -O .\result\teedin108_province_2.json -a province=2
-scrapy crawl teedin108inside -O .\result\teedin108_23_inside.json
+scrapy crawl teedin108 -O .\result\teedin108_province_3.json -a province=3
+scrapy crawl teedin108 -O .\result\teedin108_province_4.json -a province=4
+scrapy crawl teedin108 -O .\result\teedin108_province_5.json -a province=5
+scrapy crawl teedin108 -O .\result\teedin108_province_6.json -a province=6
+scrapy crawl teedin108 -O .\result\teedin108_province_7.json -a province=7
+scrapy crawl teedin108 -O .\result\teedin108_province_8.json -a province=8
+scrapy crawl teedin108 -O .\result\teedin108_province_9.json -a province=9
+scrapy crawl teedin108 -O .\result\teedin108_province_10.json -a province=10
+
+scrapy crawl teedin108inside -O .\result\teedin108_1_inside.json -a province=1
+scrapy crawl teedin108inside -O .\result\teedin108_2_inside.json -a province=2
+scrapy crawl teedin108inside -O .\result\teedin108_3_inside.json -a province=3
+scrapy crawl teedin108inside -O .\result\teedin108_4_inside.json -a province=4
+scrapy crawl teedin108inside -O .\result\teedin108_5_inside.json -a province=5
+scrapy crawl teedin108inside -O .\result\teedin108_6_inside.json -a province=6
+scrapy crawl teedin108inside -O .\result\teedin108_7_inside.json -a province=7
+scrapy crawl teedin108inside -O .\result\teedin108_8_inside.json -a province=8
+scrapy crawl teedin108inside -O .\result\teedin108_9_inside.json -a province=9
+scrapy crawl teedin108inside -O .\result\teedin108_20_inside.json -a province=10
 
 scrapy crawl author -O .\result\author.json
 scrapy crawl quotes -O .\result\quotes.json

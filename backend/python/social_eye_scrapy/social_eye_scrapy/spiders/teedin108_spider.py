@@ -1,11 +1,13 @@
 import datetime
 import re
 import time
-from .convertDateToUnix import convertDateToUnix
+
 import scrapy
 
+from .convertDateToUnix import convertDateToUnix
 
-class QuotesSpider(scrapy.Spider):
+
+class TeedinSpider(scrapy.Spider):
     name = "teedin108"
 
     def start_requests(self):
@@ -31,8 +33,8 @@ class QuotesSpider(scrapy.Spider):
             if posted > 1605524360:
                 print("yes")
                 yield {
-                    'name': re.sub('[ \t]{2,}','',container.css('div.col-xs-12 a::text').get()),
-                    'price': re.sub('[ \t]{2,}','',container.css('div.priceinlist::text')[1].get()),
+                    'name': re.sub('[ \t]{2,}', '', container.css('div.col-xs-12 a::text').get()),
+                    'price': re.sub('[ \t]{2,}', '', container.css('div.priceinlist::text')[1].get()),
                     'link': container.css('div.col-xs-12 a::attr(href)').get(),
                     'posted': re.sub('[ \t]{2,}', '', container.css('div.postdate::text')[1].get()),
                     'queryAt': now

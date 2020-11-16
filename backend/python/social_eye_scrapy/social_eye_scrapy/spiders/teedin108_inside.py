@@ -1,6 +1,9 @@
 import json
-import scrapy
 import re
+
+import scrapy
+
+
 # urls = []
 # f = open('./result/teedin108_23.json', encoding='utf8')
 # data = json.load(f)
@@ -12,12 +15,19 @@ import re
 # print(urls)
 
 
-class QuotesSpider(scrapy.Spider):
+class TeedinInsideSpider(scrapy.Spider):
     name = "teedin108inside"
 
     def start_requests(self):
+        province = getattr(self, 'province', None)
+        amphur = getattr(self, 'amphur', None)
+        if province is not None:
+            print("province = " + province)
+        if amphur is not None:
+            print("amphur = " + amphur)
         urls = []
-        f = open('./result/teedin108_23.json', encoding='utf8')
+        path = './result/teedin108_province_' + province + '.json'
+        f = open(path, encoding='utf8')
         data = json.load(f)
         for i in data:
             # print(i['link'])

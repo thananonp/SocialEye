@@ -1,4 +1,8 @@
-# File structure
+# Social Eye
+
+This project is part of CSS400.
+
+## File structure
 
 Every frontend/react file is in src folder  
 Every backend/python file is in python folder
@@ -54,3 +58,12 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ##### Crawl inside
 
 `scrapy crawl teedin108inside -O .\result\teedin108_23_inside.json`
+
+## Teedin
+
+Number of province = 77
+
+Number of amphur > 1000
+
+Our prototype will probably keep around 10 provinces.
+
