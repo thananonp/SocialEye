@@ -3,3 +3,4 @@ backend/python/social-eye-env/
 backend/python/social-eye-venv/
 .idea/
 .vscode/
+.vscode/settings.json
