@@ -1,4 +1,4 @@
-.\backend\python\social-eye-env\Scripts\Activate
+.\backend\python\social-eye-venv\Scripts\Activate
 
 cd .\backend\python\social_eye_scrapy\social_eye_scrapy
 
@@ -8,4 +8,5 @@ scrapy crawl teedin108inside -O .\result\teedin108_23_inside.json
 
 scrapy crawl author -O author.json
 
-python \spiders\nlp.py
+python .\spiders\nlp.py
+python .\spiders\tesetttt.py
