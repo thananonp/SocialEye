@@ -27,7 +27,6 @@ scrapy crawl teedin108inside -O .\result\teedin108_20_inside.json -a province=10
 scrapy crawl author -O .\result\author.json
 scrapy crawl quotes -O .\result\quotes.json
 
-
 python .\spiders\nlp.py
 python .\spiders\tesetttt.py
 python .\spiders\DDPropertyRSSCondo.py
