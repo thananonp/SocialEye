@@ -35,7 +35,7 @@ class TeedinInsideSpider(scrapy.Spider):
         # for info in response.css('div.working-area div.row div.padding-right-10 div.row article'):
         for info in response.css('div.working-area div.row div.padding-right-10 div.row article'):
             yield {
-                'url': url,
+                'link': url,
                 'name': info.css('div.poster-detail a::text').getall()[0],
                 'line': re.sub('\s{2,}', '', info.css('div.poster-detail::text').getall()[1]),
                 'mail': re.sub('\s{2,}', '', info.css('div.poster-detail a::text').getall()[2]),
