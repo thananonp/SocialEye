@@ -451,7 +451,7 @@
       "source": "DDProperty"
     },
     {
-      "title": "For Sale - 5B4MG0076 ขายที่ดินแปลงสวย ทำเลดี พื้นที่ 35 ไร่ 2 งาน 90 เพียง 125 ล้านบาท",
+      "title": "For Sale - 5B4MG0076 ขายที่ดินแปลงสวย ทำเลดี พื้นที่ 35 ไร่ 2 งาน 90 เพียง 125 ล้าน",
       "category": "Land For Sale",
       "pubDate": "Fri, 20 Nov 2020 19:03:01 +0700",
       "price": 125000000,
@@ -1354,7 +1354,7 @@
       "title": "PP726 ที่ดินสวยรูปสี่เหลี่ยมถมแล้วสูงกว่าถนน40cm. ติดถนนซอย2ด้าน เหมาะทำโกดัง. เซ่เว่นและอื่นอื่",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 18:05",
-      "price": "ราคา 9000000 บาท",
+      "price": 9000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/land/view/2305165/"
@@ -1363,7 +1363,7 @@
       "title": "ขายคอนโดศุภาลัย เอลีท สุรวงศ์",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 18:03 ",
-      "price": "ราคา 7,800,000 บาท",
+      "price": 7000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305162/"
@@ -1372,7 +1372,7 @@
       "title": "ขาย บ้านปัญญา เลคโฮม หลังมุม รามอินทรา 162ตรว.",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 18:03 ",
-      "price": "ราคา 12,900,000 บาท",
+      "price": 12000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305161/"
@@ -1381,7 +1381,7 @@
       "title": "ขาย มาย คอนโด สุขุมวิท 103 อุดมสุข 2 ห้องนอน",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 18:01 ",
-      "price": "ราคา 2,800,000 บาท",
+      "price": 2000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305160/"
@@ -1390,7 +1390,7 @@
       "title": "PP727ขายที่ดิน สะแกงาม บางขุนเทียน 814 ตารางวา ถนนบางขุนเทียน ซอยสะแกงาม37",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:56 ",
-      "price": "ราคา 48,840,000 บาท",
+      "price": 48840000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/land/view/2305155/"
@@ -1399,7 +1399,7 @@
       "title": "ให้เช่าบ้านเนื้อที่ 72 ตรว ซอยโชคชัย4",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:55 ",
-      "price": "ราคา 30,000 บาท",
+      "price": 30000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305153/"
@@ -1408,7 +1408,7 @@
       "title": "ให้เช่าอาคาร4ชั้น ใกล้รถไฟฟ้าบางแค เพชรเกษม64",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:52 ",
-      "price": "ราคา 20,000 บาท",
+      "price": 20000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305145/"
@@ -1417,7 +1417,7 @@
       "title": "ขายต่ำราคาตลาด ศุภาลัยเวลลิงตัน2",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:50 ",
-      "price": "ราคา 3,490,000 บาท",
+      "price": 3490000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305143/"
@@ -1426,7 +1426,7 @@
       "title": "ให้เช่าอาคาร4 ชั้นใกล้สถาบันเทคโนโลยี่ไทย-ญี่ปุ่น",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:49 ",
-      "price": "ราคา 39,000 บาท",
+      "price": 39000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305142/"
@@ -1435,7 +1435,7 @@
       "title": "PP728ขายหรือให้เช่าที่ดิน ท่าข้าม16",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:47 ",
-      "price": "ราคา 15,000 บาท",
+      "price": 15000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/land/view/2305140/"
@@ -1444,7 +1444,7 @@
       "title": "รหัสทรัพย์ B2471ให้เช่า The Line วงศ์สว่าง (ห้องสวย วิวดี ชั้นสูง)",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:47 ",
-      "price": "ราคา 12,000 บาท",
+      "price": 12000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305139/"
@@ -1453,7 +1453,7 @@
       "title": "ขายถูก ยูนิโอ พระราม2 ท่าข้าม",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:43 ",
-      "price": "ราคา 1,690,000 บาท",
+      "price": 1690000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305135/"
@@ -1462,7 +1462,7 @@
       "title": "ขายเดอะ ไลน์ จตุจักร หมอชิต 79 ตรมBTS หมอชิต",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:41 ",
-      "price": "ราคา 14000000 บาท",
+      "price": 14000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305134/"
@@ -1471,7 +1471,7 @@
       "title": "ขายทาวน์โฮม ราชพฤกษ์ สุวรรณภูมิ ลาดกระบัง 22ตร.ว",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:39 ",
-      "price": "ราคา 2,300,000 บาท",
+      "price": 2000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305133/"
@@ -1480,7 +1480,7 @@
       "title": "PA559L559 ขายที่ดินถมแล้ว 51 ตรว. ลาดกระบัง",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:38 ",
-      "price": "ราคา 2,040,000 บาท",
+      "price": 2040000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/land/view/2305131/"
@@ -1489,7 +1489,7 @@
       "title": "PP729 ขายที่ 286ตร. ว ซอยแสมดำ3 ใกล้ถนนพระราม2 ถูกมาก",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:29 ",
-      "price": "ราคา 4,583,000 บาท",
+      "price": 4583000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/land/view/2305126/"
@@ -1498,7 +1498,7 @@
       "title": "ขายบ้านเดี่ยวเดอะแพลนท์ นวมินทร์86 เนื้อที่ 63.9 ตรว.(หลังมุม)",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:12 ",
-      "price": "ราคา 7,900,000 บาท",
+      "price": 7000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305118/"
@@ -1507,7 +1507,7 @@
       "title": "PP730 ขายโกดัง 400 ตร. ม พร้อมที่ดิน 400 ตร. วา ถนนแสมดำ ซอย2 ใกล้ถนนพระราม2",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:12 ",
-      "price": "ราคา 15000000 บาท",
+      "price": 15000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305117/"
@@ -1516,7 +1516,7 @@
       "title": "ให้เช่าบ้าน ใกล้ BTSปุณณวิถี 147 ตรว. สุขุมวิท101",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:11 ",
-      "price": "ราคา 70,000 บาท",
+      "price": 70000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305115/"
@@ -1525,7 +1525,7 @@
       "title": "ให้เช่าทาวน์โฮม ปริญลักษณ์ เกษตรนวมินทร์ หลังมุม",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:07 ",
-      "price": "ราคา 17,000 บาท",
+      "price": 17000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305112/"
@@ -1534,7 +1534,7 @@
       "title": "รหัสทรัพย์ B2473 ให้เช่า The Line พหลฯ – ประดิพัทธ์ (ห้องสวย เฟอร์ครบพร้อมเข้าอยู่)",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:02 ",
-      "price": "ราคา 15,000 บาท",
+      "price": 15000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305110/"
@@ -1543,7 +1543,7 @@
       "title": "ให้เช่าโกดัง 360 ตรม.ใกล้ mrt ลาดพร้าว ลาดพร้าว34",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 17:02 ",
-      "price": "ราคา 50,000 บาท",
+      "price": 50000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305109/"
@@ -1552,7 +1552,7 @@
       "title": "ขาย คอนโด Supalai place สุขุมวิท 39, 2 นอน 97 ตรม ชั้น 19 วิวเมือง ตกแต่งสวย เฟอร์จัดครบพร้อมอยู่",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:59 ",
-      "price": "ราคา 8,500,000 บาท",
+      "price": 8000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305106/"
@@ -1561,7 +1561,7 @@
       "title": "ให้เช่าทาวน์โฮม 2 ชั้น 150 ตรม. ใกล้ MRT ลาดพร้าว",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:58 ",
-      "price": "ราคา 26,000 บาท",
+      "price": 26000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305104/"
@@ -1570,7 +1570,7 @@
       "title": "ขายบ้านเดี่ยวไลฟ์ บางกอกบูเลอวาร์ด รามอินทรา (ระหว่างซ.รามอินทรา 105-107) ขนาด 64.5 ตรว.",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:56 ",
-      "price": "ราคา 11,900,000 บาท",
+      "price": 11000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305102/"
@@ -1579,7 +1579,7 @@
       "title": "PS01ให้เช่าพื้นที่สุขุมวิททองหล่อเขตวัฒนา",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:54 ",
-      "price": "ราคา 59,000 บาท",
+      "price": 59000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305101/"
@@ -1588,7 +1588,7 @@
       "title": "บ้านขาย 4ห้องนอน BTSทองหล่อ สุขุมวิท กรุงเทพมหานคร ( 55286 )",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:54 ",
-      "price": "ราคา 19,500,000 บาท",
+      "price": 19000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305099/"
@@ -1597,7 +1597,7 @@
       "title": "ขายบ้านเดี่ยวหรูพร้อมออฟฟิศ 540 ตรว. ซ.สุขุมวิท101",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:50 ",
-      "price": "ราคา 100000000 บาท",
+      "price": 100000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305097/"
@@ -1606,7 +1606,7 @@
       "title": "ให้เช่าคอนโด Bangkok Feliz Sathorn - Taksin แบบ 2 ห้องนอน1 ห้องน้ำ58 ตร.ม ราคาถูก",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:48 ",
-      "price": "ราคา 18,000 บาท",
+      "price": 18000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305096/"
@@ -1615,7 +1615,7 @@
       "title": "PB28 ขายบ้านออฟฟิศบ้านเดี่ยวหรูสุขุมวิท101",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:47 ",
-      "price": "ราคา 100000000 บาท",
+      "price": 100000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305094/"
@@ -1624,7 +1624,7 @@
       "title": "PA563L563 ขายที่ดินโฉนดถมแล้ว54ตร. วา สายไหม",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:46 ",
-      "price": "ราคา 3,900,000 บาท",
+      "price": 3000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/land/view/2305092/"
@@ -1633,7 +1633,7 @@
       "title": "ที่ดินสวยพร้อมใช้ 350 ตร.ว. ยกหรือแบ่งได้ แถมพื้นคอนกรีตและโครงสร้าง เส้นศาลาธรรมสพน์ ใกล้มหิดล ในราคาถูก",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:45 ",
-      "price": "ราคา 35,000 บาท",
+      "price": 35000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/land/view/2305091/"
@@ -1642,7 +1642,7 @@
       "title": "PT10 ให้เช่าโกดัง ลาดพร้า34",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:43 ",
-      "price": "ราคา 50,000 บาท",
+      "price": 50000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305088/"
@@ -1651,7 +1651,7 @@
       "title": "แชมเบอร์ส เฌอ รัชดา-รามอินทรา ตึก B ชั้น 2",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:41 ",
-      "price": "ราคา 14,500 บาท",
+      "price": 14000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305087/"
@@ -1660,7 +1660,7 @@
       "title": "รหัสทรัพย์ B2474 ให้เช่า METROLUXE พหลโยธิน-สุทธิสาร (ระเบียงทิศใต้ วิวสวน(ฮวงจุ้ยดี)",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:41 ",
-      "price": "ราคา 11,500 บาท",
+      "price": 11000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305086/"
@@ -1669,7 +1669,7 @@
       "title": "ทาวน์โฮม ย่านรัชดา ใกล้MRTสุทธิสาร",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:39 ",
-      "price": "ราคา 18,000 บาท",
+      "price": 18000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305085/"
@@ -1678,7 +1678,7 @@
       "title": "ขายทาวน์โฮม 4 ชั้น หมู่บ้านกลางเมืองทองหล่อ ถนนสุขุมวิท ใกล้รถไฟฟ้าสายสีเขียวสถานีทองหล่อ",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:36 ",
-      "price": "ราคา 33000000 บาท",
+      "price": 33000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305082/"
@@ -1687,7 +1687,7 @@
       "title": "คอนโดลุมพินีวิลล์ลาดพร้าว โชคชัย4ตึกAชั้น15",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:36 ",
-      "price": "ราคา 8,500 บาท",
+      "price": 8000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305081/"
@@ -1696,7 +1696,7 @@
       "title": "บ้านกลางเมือง เกษตร นวมินทร์2 ลาดปลาเค้า79",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:35 ",
-      "price": "ราคา 27,000 บาท",
+      "price": 27000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305079/"
@@ -1705,7 +1705,7 @@
       "title": "SUPALAI WELLINGTON รัชดา",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:31 ",
-      "price": "ราคา 34,500 บาท",
+      "price": 34000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305077/"
@@ -1714,7 +1714,7 @@
       "title": "ให้เช่า ดีคอนโด รามคำแหง 9 อาคาร B ชั้น 6",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:30 ",
-      "price": "ราคา 8,000 บาท",
+      "price": 8000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305076/"
@@ -1723,7 +1723,7 @@
       "title": "PJD06 ให้เช่าทาว์นโฮมลาดพร้าว107ศุภาลัยเอสเซ้นส์",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:30 ",
-      "price": "ราคา 27,000 บาท",
+      "price": 27000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305075/"
@@ -1732,7 +1732,7 @@
       "title": "ขายด่วนบ้านเดี่ยว 70 ตรว. นวลจันทร์ เลียบด่วน รามอินทรา",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:29 ",
-      "price": "ราคา 7,900,000 บาท",
+      "price": 7000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305073/"
@@ -1750,7 +1750,7 @@
       "title": "NC1322 ให้เช่าคอนโด ศุภาลัยเวลลิงตัน 2",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:26 ",
-      "price": "ราคา 27,000 บาท",
+      "price": 27000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305070/"
@@ -1759,7 +1759,7 @@
       "title": "ให้เช่าทาวน์โฮม2ชั้น บ้านรสริน ซอยโกสุมรวมใจ40",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:26 ",
-      "price": "ราคา 16,000 บาท",
+      "price": 16000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305067/"
@@ -1768,7 +1768,7 @@
       "title": "ให้เช่า ไอคอนโด เสรีไทย กรีนสเปซ",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:24 ",
-      "price": "ราคา 7,000 บาท",
+      "price": 7000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305066/"
@@ -1777,7 +1777,7 @@
       "title": "SUPALAI WELLINGTON รัชดา ขนาด 74 sq.m. 2Bed",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:21 ",
-      "price": "ราคา 25,000 บาท",
+      "price": 25000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305062/"
@@ -1786,7 +1786,7 @@
       "title": "ขายบ้านเดี่ยว2ชั้น พร้อมที่ดิน ซอย สุขุมวิท 101",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:21 ",
-      "price": "ราคา 40000000 บาท",
+      "price": 40000000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/house/view/2305061/"
@@ -1795,7 +1795,7 @@
       "title": "รหัสทรัพย์ B2475 ให้เช่า คอนโด Ideo New Rama 9 ตัดใหม่ ห้องสวยแต่งครบพร้อมเข้าอยู่",
       "category": "บ้าน",
       "pubDate": "Fri, 20 Nov 2020 16:19 ",
-      "price": "ราคา 13,500 บาท",
+      "price": 13000 ,
       "size": 153,
       "source": "teedin108",
       "link": "https://www.teedin108.com/condo/view/2305059/"
