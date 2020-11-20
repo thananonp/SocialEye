@@ -33,9 +33,10 @@ class TeedinSpider(scrapy.Spider):
             if posted > 1605524360:
                 print("yes")
                 yield {
-                    'name': re.sub('[ \t]{2,}', '', container.css('div.col-xs-12 a::text').get()),
+                    'title': re.sub('[ \t]{2,}', '', container.css('div.col-xs-12 a::text').get()),
+                    'category': 'บ้าน',
+                    'pubDate': re.sub('[ \t]{2,}', '', container.css('div.postdate::text')[1].get()),
                     'price': re.sub('[ \t]{2,}', '', container.css('div.priceinlist::text')[1].get()),
-                    'link': container.css('div.col-xs-12 a::attr(href)').get(),
-                    'posted': re.sub('[ \t]{2,}', '', container.css('div.postdate::text')[1].get()),
-                    'queryAt': now
+                    'size': 153,
+                    'link': container.css('div.col-xs-12 a::attr(href)').get()
                 }

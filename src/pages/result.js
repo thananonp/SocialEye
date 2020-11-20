@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import _ from "lodash";
 
 import "../App.css";
-// import { stockData } from "../mockupjson";
-// import data from "../teedin108.json";
 import { database } from "../config/firebase";
 
 import {

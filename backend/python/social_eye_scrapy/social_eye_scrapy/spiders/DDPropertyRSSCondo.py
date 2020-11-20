@@ -44,3 +44,5 @@ for item in NewsFeed.entries:
 
 with open('./result/ddPropertyCondo.json', 'w', encoding='utf-8') as outfile:
     json.dump(data, outfile, ensure_ascii=False)
+
+# todo change to folder and merge.
