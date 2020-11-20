@@ -35,7 +35,6 @@ const useStyles = makeStyles({
   },
 });
 
-var mockxxx;
 
 export const LandResultTable = () => {
   const [data, setData] = useState();
@@ -44,7 +43,7 @@ export const LandResultTable = () => {
   useEffect(() => {
     const fetchData = async () => {
       const result = await database
-        .ref('/mockupdata')
+        .ref('/result')
         .once("value")
         .then(function (snapshot) {
           return snapshot.val();
