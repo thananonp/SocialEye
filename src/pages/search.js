@@ -1,21 +1,28 @@
-import React, { Fragment } from 'react';
-import logo from '../architectsolid.svg';
-import { Button, TextField, makeStyles, Typography } from '@material-ui/core';
+import React, { Fragment } from "react";
+import logo from "../architectsolid.svg";
+import {
+  Button,
+  TextField,
+  makeStyles,
+  Typography,
+  Container,
+} from "@material-ui/core";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
   useRouteMatch,
-  useParams
+  useParams,
 } from "react-router-dom";
-import '../App.css';
-
+import EnhancedTable from "./result1";
+import "../App.css";
+import AppHeader from "../components/AppHeader"
 
 export const Search = () => {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} alt="logo" />
         <Typography variant="h3" className="header">The social eye</Typography>
         <form noValidate autoComplete="off">
@@ -25,7 +32,10 @@ export const Search = () => {
         <Link to="/result">
           <Button variant="contained" color="primary">Go</Button>
         </Link>
-      </header>
+      </header> */}
+      <AppHeader>
+        <EnhancedTable />
+      </AppHeader>
     </div>
   );
-}
+};

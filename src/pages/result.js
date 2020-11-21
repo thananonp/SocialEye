@@ -17,7 +17,7 @@ import {
   TableRow,
   TablePagination,
   Paper,
-  Text
+  Text,
 } from "@material-ui/core";
 import {
   BrowserRouter as Router,
@@ -35,7 +35,6 @@ const useStyles = makeStyles({
   },
 });
 
-
 export const LandResultTable = () => {
   const [data, setData] = useState();
   const [alreadyQuery, setAlreadyQuery] = useState(false);
@@ -43,7 +42,7 @@ export const LandResultTable = () => {
   useEffect(() => {
     const fetchData = async () => {
       const result = await database
-        .ref('/result')
+        .ref("/result")
         .once("value")
         .then(function (snapshot) {
           return snapshot.val();
@@ -59,11 +58,8 @@ export const LandResultTable = () => {
     }
   });
   // console.log(mockxxx)
- 
+
   console.log("Data ", data);
-
-  
-
 
   const classes = useStyles();
   const [page, setPage] = React.useState(0);
@@ -79,57 +75,58 @@ export const LandResultTable = () => {
   };
 
   const renderData = () => {
-    if (data) return (
-      <Paper elevation={3}>
-        <TableContainer>
-          <Table
-            stickyHeader
-            className={classes.table}
-            aria-label="simple table"
-            size="small"
-          >
-            <TableHead>
-              <TableRow>
-                <TableCell style={{ width: 800 }}>Name</TableCell>
-                <TableCell>Price</TableCell>
-                <TableCell>Link</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {data
-      .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-      .map((data, key) => {
-        return (
-          <Stock
-            key={key}
-            name={data.name}
-            price={data.price}
-            // size={data.size}
-            // persquaremeter={data.persquaremeter}
-            // location={data.location}
-            // district={data.district}
-            // province={data.province}
-            // comparison={data.comparisonwithaverage}
-            link={data.link}
+    if (data)
+      return (
+        <Paper elevation={3}>
+          <TableContainer>
+            <Table
+              stickyHeader
+              className={classes.table}
+              aria-label="simple table"
+              size="small"
+            >
+              <TableHead>
+                <TableRow>
+                  <TableCell style={{ width: 800 }}>Name</TableCell>
+                  <TableCell>Price</TableCell>
+                  <TableCell>Link</TableCell>
+                  <TableCell>Link</TableCell>
+                  <TableCell>Link</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {data
+                  .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                  .map((data, key) => {
+                    return (
+                      <Stock
+                        key={key}
+                        name={data.title}
+                        catagory={data.category}
+                        price={data.price}
+                        size={data.size}
+                        link={data.link}
+                        source={data.source}
+                        pubDate={data.pubDate}
+                      />
+                    );
+                  })}
+              </TableBody>
+            </Table>
+          </TableContainer>
+          <TablePagination
+            rowsPerPageOptions={[10, 25, 100]}
+            component="div"
+            count={data.length}
+            rowsPerPage={rowsPerPage}
+            page={page}
+            onChangePage={handleChangePage}
+            onChangeRowsPerPage={handleChangeRowsPerPage}
           />
-        );
-      })}
-            </TableBody>
-          </Table>
-        </TableContainer>
-        <TablePagination
-          rowsPerPageOptions={[10, 25, 100]}
-          component="div"
-          count={data.length}
-          rowsPerPage={rowsPerPage}
-          page={page}
-          onChangePage={handleChangePage}
-          onChangeRowsPerPage={handleChangeRowsPerPage}
-        />
-      </Paper>
-    )
-    return (<h1>กูโหลดอยู่ไอ่สัส!!!</h1>)
-  }
+        </Paper>
+      );
+    return <h1>กูโหลดอยู่ไอ่สัส!!!</h1>;
+  };
   // const stringJSON = JSON.stringify(database)
   // console.log("database ", database)
   return (
@@ -165,28 +162,15 @@ const HomePageHeader = () => {
   );
 };
 
-const Stock = ({
-  name,
-  price,
-  size,
-  persquaremeter,
-  location,
-  district,
-  province,
-  comparison,
-  link,
-}) => {
+const Stock = ({ name, catagory, price, size, link, source, pubDate }) => {
   // if (!name) return null;
   return (
     <TableRow>
       <TableCell>{name}</TableCell>
+      <TableCell>{catagory}</TableCell>
       <TableCell>{price}</TableCell>
-      {/* <TableCell>{size}</TableCell>
-      <TableCell>{persquaremeter}</TableCell>
-      <TableCell>{location}</TableCell>
-      <TableCell>{district}</TableCell>
-      <TableCell>{province}</TableCell>
-      <TableCell>{comparison}</TableCell> */}
+      <TableCell>{source}</TableCell>
+      <TableCell>{pubDate}</TableCell>
       <TableCell>
         <a href={link}>Link</a>
       </TableCell>
